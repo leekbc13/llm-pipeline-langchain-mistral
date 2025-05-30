@@ -1,41 +1,58 @@
-# 🧠 LLM Pipeline & Prompt Behavior Testing  
-_Exploratory Work with LangChain, Mistral, and Prompt Strategy_
+# 🤖 Python LLM Analytics Pipeline (LangChain + Mistral)
 
 ## 📘 Overview
-This project contains early experimentation with LLM workflows using [LangChain](https://www.langchain.com/) and Mistral. The goal was to evaluate **prompt structure, model responsiveness, and pipeline behavior** under different framing scenarios — with a focus on applied product testing and behavior modeling.
 
-Included is an activity-based prompt log and exploration of:
+This project walks through the setup and execution of a full **LLM pipeline** using:
 
-- How prompt phrasing impacts model output
-- The structure and flexibility of LangChain’s pipeline components
-- Practical considerations when chaining LLM responses across multiple task layers
+* [LangChain](https://www.langchain.com/)
+* [Mistral 7B model](https://mistral.ai/)
+* [Ollama](https://ollama.ai/) (local LLM deployment)
+* NLTK (Natural Language Toolkit)
+* BLEU scoring for generated text accuracy
 
-The notebook has been exported to PDF for quick review.
+The notebook was created in Google Colab and demonstrates how to:
+
+* Spin up LLM infrastructure (via `xterm` and Ollama)
+* Query an LLM using LangChain
+* Analyze LLM-generated responses using natural language processing techniques
+* Evaluate model performance using sentiment, part-of-speech tagging, and BLEU score
 
 ---
 
-## 🧩 Key Themes
-- **Prompt Engineering:** How subtle framing changes influence accuracy, tone, and behavior
-- **Pipeline Prototyping:** Using LangChain to simulate sequential task logic and evaluate multi-step AI tasks
-- **UX Alignment:** Testing how LLMs interpret ambiguous prompts — critical for designing smart, AI-integrated product flows
+## 🧠 Key Concepts Demonstrated
+
+| Feature                          | Description                                                           |
+| -------------------------------- | --------------------------------------------------------------------- |
+| **Prompting & Chain-of-Thought** | LLM is primed using structured templates (`Let's think step by step`) |
+| **LangChain Integration**        | Pipeline sends inputs to Mistral and captures responses               |
+| **NLTK Analysis**                | Sentiment scoring, tokenization, frequency distribution               |
+| **BLEU Score Evaluation**        | Quantitative scoring of LLM accuracy using reference Wikipedia data   |
 
 ---
 
-## 💡 Why This Matters
-As LLMs become embedded into product workflows, understanding not just *what* they say, but *why* they respond a certain way is essential. This work reflects my approach to:
+## 🔍 Why It Matters
 
-- Rapid experimentation  
-- Behavior modeling with real-world implications  
-- Translating emerging tech into measurable product impact
+This project highlights how to:
+
+* Design and analyze LLM behavior in a structured, repeatable way
+* Use open-source tools to simulate AI interaction in low-resource environments
+* Extend NLP skills into the modern LLM landscape for applied product testing, data validation, and content quality control
+
+---
+
+## 📎 Files
+
+* `LLM_Activity.ipynb` – Full executable notebook
+* `LLM_Activity.pdf` – Rendered output for quick viewing
 
 ---
 
 ## 👤 Author
 
-**Kache Lee**  
-[GitHub](https://github.com/leekbc13) • [LinkedIn](https://linkedin.com/in/kachelee) • [Email](mailto:leekbc13@gmail.com)
+**Kache Lee**
+[GitHub](https://github.com/leekbc13) | [LinkedIn](https://linkedin.com/in/kachelee) | [Email](mailto:leekbc13@gmail.com)
 
 ---
 
-> _“I approach LLMs the same way I approach funnel optimization: with curiosity, structure, and a constant drive to test what actually works.”_
+> *"I approach LLM behavior the same way I approach analytics — with structure, experimentation, and an obsession with understanding user context."*
 
